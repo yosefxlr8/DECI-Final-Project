@@ -1,0 +1,16 @@
+code by: Youssef Mahmoud Abdelwahed
+
+Rules:
+-Symmetrical encryption (a single key to encrypt and decrypt)  
+-Shifting positions, (as in caesar encryption)
+-The key is an integer chosen by the user used as the shifting value
+-This encryption is relatively weak against all kind of attacks:
+    Only plain_text attack -> as spaces are not emitted by default 
+    Known plain_text attack -> it's really clear that it's only shifting
+    Chosen plain_text attack -> would be very easy to break it as trying "a"->"b" if the key = 1 would be easy to Known
+
+Implementation:
+-Usage of classes, functions
+-Breaking the program up into pieces
+    first part: file_handling from reading and writing to a new file_handling
+    second part: the Cipher class used to initialize a encoder and a decoder with a specified key
